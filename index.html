@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reclaiming Identity — The Hidden Echoes of Residential Schools</title>
+  <meta name="description" content="An interactive scrolling museum exhibit on Canada's residential schools: historical truth, generational impact, and a closing reflection on dignity, solidarity, and faith.">
+  <meta property="og:title" content="Reclaiming Identity — The Hidden Echoes of Residential Schools">
+  <meta property="og:description" content="An interactive scrolling museum exhibit: historical truth, generational impact, and a closing reflection on dignity, solidarity, and faith.">
+  <meta property="og:image" content="assets/hero.webp">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c0b09'/%3E%3Cpath d='M16 6 L26 16 L16 26 L6 16 Z' fill='none' stroke='%23d9a441' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/hero.webp">
+  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#exhibit">Skip to the exhibit</a>
+
+  <header class="site-header" id="siteHeader">
+    <a class="wordmark" href="#top">Reclaiming Identity</a>
+    <nav class="site-nav" aria-label="Exhibit navigation">
+      <a href="#exhibit">Exhibit</a>
+      <a href="#transformation">Transformation</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ SECTION 1 · HERO ============ -->
+    <section class="hero" aria-label="Opening painting">
+      <img class="hero__image" src="assets/hero.webp" alt="Renaissance-style painting: a Canadian government official in a business suit slides stacks of cash forward, while an Indigenous man pulls his hand back, refusing to touch the money." width="1774" height="887" fetchpriority="high">
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="kicker">An interactive exhibit</p>
+        <h1 class="hero__title">Reclaiming Identity</h1>
+        <p class="hero__subtitle">The Hidden Echoes of Residential Schools</p>
+        <p class="hero__advisory">This exhibit addresses the residential school system and its lasting harms.
+          If you need support, the 24-hour Residential School Crisis Line is 1-866-925-4419.</p>
+      </div>
+
+      <p class="hero__caption"><span class="caption-label">The Offering</span> — interpretive illustration after
+        Michelangelo’s <em>The Creation of Adam</em>. Money cannot buy reconciliation.</p>
+      <div class="hero__scrollcue" aria-hidden="true">
+        <span>Scroll to enter the gallery</span>
+        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" aria-hidden="true">
+          <path d="M7 1v20M2 16l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2 · THE GALLERY ============ -->
+    <section class="gallery" id="exhibit">
+      <div class="gallery__intro">
+        <p class="kicker">The gallery</p>
+        <h2 class="gallery__heading">Four artifacts. Four truths.</h2>
+        <p class="gallery__lede">Walk slowly. Each artifact carries a piece of this history — select it to uncover what it holds.</p>
+      </div>
+
+      <div class="stations">
+
+        <!-- Station 1 -->
+        <article class="station" id="station-1" data-station>
+          <div class="station__visual">
+            <button class="artifact" type="button" aria-expanded="false" aria-controls="story-1" aria-label="Uncover the story of the corroded sculpture">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <img src="assets/artifact-sculpture.webp" alt="A corroded sculpture covered in peeling white paint, riddled with holes and embedded with shards of broken glass, lit by a museum spotlight." width="1024" height="768" loading="lazy">
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 01</p>
+            <h3 class="station__title">The Corroded Figure</h3>
+            <p class="station__medium">Corroded steel, flaking paint, broken glass</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-1">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-1" role="region" aria-label="Station 1 story">
+              <p>“The residential school system’s main goal was assimilation. Constant physical and psychological punishment reinforced the stripping of identity, leading to a forgotten culture, tradition, spirituality, language, and family segregation.”</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Station 2 -->
+        <article class="station station--flip" id="station-2" data-station>
+          <div class="station__visual">
+            <button class="artifact" type="button" aria-expanded="false" aria-controls="story-2" aria-label="Uncover the story of the empty tobacco bowl">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <img src="assets/artifact-bowl.webp" alt="An aged, completely empty carved tobacco bowl resting on weathered wood in dim museum light." width="1024" height="768" loading="lazy">
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 02</p>
+            <h3 class="station__title">The Empty Tobacco Bowl</h3>
+            <p class="station__medium">Carved stone, weathered cedar</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-2">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-2" role="region" aria-label="Station 2 story">
+              <p>“The lasting generational effects manifested as vague voids in communities—often resulting in struggles, addictions, and a constant, directionless search for meaning. Intergenerationally, children were stripped of the opportunity to learn their native traditions and language due to the forced assimilation of their parents.”</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Station 3 -->
+        <article class="station" id="station-3" data-station>
+          <div class="station__visual">
+            <button class="artifact" type="button" aria-expanded="false" aria-controls="story-3" aria-label="Uncover the story of the history book, oil, and documents">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <img src="assets/artifact-books.webp" alt="A vintage Canadian history book beside a glass cup of oil, with scattered aged posters and documents, lit from one side." width="1536" height="1024" loading="lazy">
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 03</p>
+            <h3 class="station__title">Omitted Histories</h3>
+            <p class="station__medium">Oil, textbook, posters, documents</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-3">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-3" role="region" aria-label="Station 3 story">
+              <p>“History classes have long hidden or sanitized past Indigenous events. True reconciliation efforts—such as establishing Indigenous councils and financial settlements—arose only after immense advocacy, proving that learning injustices as absolute truth is vital to public awareness.”</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Station 4 -->
+        <article class="station station--flip" id="station-4" data-station>
+          <div class="station__visual">
+            <button class="artifact artifact--paper" type="button" aria-expanded="false" aria-controls="story-4" aria-label="Uncover the story of the blank white paper">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <span class="paper" aria-hidden="true"><span class="paper__sheet"></span></span>
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 04</p>
+            <h3 class="station__title">The Blank White Paper</h3>
+            <p class="station__medium">Paper, light</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-4">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-4" role="region" aria-label="Station 4 story">
+              <p>“Healing and reconciliation serve as a crucial public acknowledgment of previous injustices—an attempt to fill the void. While it cannot instantly fix the past, it provides warmth and allows unheard voices to finally speak.”</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ SECTION 3 · BUTTERFLY TRANSITION ============ -->
+    <section class="transition" id="transformation" aria-label="Transformation sequence">
+      <div class="transition__stage">
+        <p class="transition__intro">Leave the heavy air of the gallery behind.</p>
+
+        <button class="butterfly-btn" type="button" id="butterflyBtn" aria-label="Follow the butterfly to the closing reflection">
+          <div class="butterfly" id="butterfly" aria-hidden="true">
+            <svg class="butterfly__svg" viewBox="0 0 420 420" role="img">
+              <defs>
+                <radialGradient id="wingGrad" cx="35%" cy="30%" r="75%">
+                  <stop offset="0%" stop-color="#fff3d6"/>
+                  <stop offset="45%" stop-color="#f2c96b"/>
+                  <stop offset="100%" stop-color="#c07f2a" stop-opacity="0.85"/>
+                </radialGradient>
+                <radialGradient id="wingGradLower" cx="45%" cy="20%" r="80%">
+                  <stop offset="0%" stop-color="#ffe7bd"/>
+                  <stop offset="100%" stop-color="#b8742c" stop-opacity="0.8"/>
+                </radialGradient>
+                <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+                  <feGaussianBlur stdDeviation="7" result="blur"/>
+                  <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <ellipse class="butterfly__aura" cx="210" cy="215" rx="190" ry="190" fill="url(#auraGrad)"/>
+              <radialGradient id="auraGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#f2c96b" stop-opacity="0.28"/>
+                <stop offset="70%" stop-color="#f2c96b" stop-opacity="0.06"/>
+                <stop offset="100%" stop-color="#f2c96b" stop-opacity="0"/>
+              </radialGradient>
+
+              <g filter="url(#glow)">
+                <!-- left wings -->
+                <g class="wing wing--left">
+                  <g class="flap">
+                    <path class="wing__upper" d="M204 196 C 158 118, 96 70, 62 88 C 26 108, 44 190, 96 224 C 140 252, 186 232, 204 220 Z" fill="url(#wingGrad)"/>
+                    <path class="wing__lower" d="M204 224 C 168 244, 118 268, 104 306 C 94 338, 130 352, 162 336 C 190 322, 202 282, 206 252 Z" fill="url(#wingGradLower)"/>
+                    <path d="M204 200 C 150 150, 106 122, 76 118 C 110 150, 150 186, 204 216 Z" fill="#fff3d6" opacity="0.5"/>
+                    <circle cx="120" cy="130" r="6" fill="#fff8e8" opacity="0.9"/>
+                    <circle cx="150" cy="180" r="4" fill="#fff8e8" opacity="0.7"/>
+                    <circle cx="128" cy="292" r="4" fill="#fff8e8" opacity="0.7"/>
+                  </g>
+                </g>
+                <!-- right wings -->
+                <g class="wing wing--right">
+                  <g class="flap">
+                    <path class="wing__upper" d="M216 196 C 262 118, 324 70, 358 88 C 394 108, 376 190, 324 224 C 280 252, 234 232, 216 220 Z" fill="url(#wingGrad)"/>
+                    <path class="wing__lower" d="M216 224 C 252 244, 302 268, 316 306 C 326 338, 290 352, 258 336 C 230 322, 218 282, 214 252 Z" fill="url(#wingGradLower)"/>
+                    <path d="M216 200 C 270 150, 314 122, 344 118 C 310 150, 270 186, 216 216 Z" fill="#fff3d6" opacity="0.5"/>
+                    <circle cx="300" cy="130" r="6" fill="#fff8e8" opacity="0.9"/>
+                    <circle cx="270" cy="180" r="4" fill="#fff8e8" opacity="0.7"/>
+                    <circle cx="292" cy="292" r="4" fill="#fff8e8" opacity="0.7"/>
+                  </g>
+                </g>
+                <!-- body -->
+                <g class="butterfly__body">
+                  <ellipse cx="210" cy="150" rx="10" ry="12" fill="#4a3418"/>
+                  <path d="M202 142 C 190 122, 176 110, 160 104 M218 142 C 230 122, 244 110, 260 104" stroke="#4a3418" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <circle cx="158" cy="102" r="4" fill="#f2c96b"/>
+                  <circle cx="262" cy="102" r="4" fill="#f2c96b"/>
+                  <ellipse cx="210" cy="228" rx="9" ry="66" fill="#4a3418"/>
+                  <path d="M204 180 L216 180 M203 200 L217 200 M204 220 L216 220 M206 240 L214 240" stroke="#f2c96b" stroke-width="2" opacity="0.7"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </button>
+
+        <p class="transition__hint" id="transitionHint">Follow the butterfly</p>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 4 · CLOSING REFLECTION ============ -->
+    <section class="reflection" id="reflection" aria-label="Closing reflection">
+      <div class="reflection__glow" aria-hidden="true"></div>
+      <div class="reflection__column">
+        <p class="kicker">The gallery exit · a personal reflection</p>
+        <h2 class="reflection__title">Dignity, Solidarity, and Faith</h2>
+        <div class="reflection__rule" aria-hidden="true"></div>
+
+        <p class="reflection__dropcap">Over the course of this month, tremendous emotions were felt. Spikes of realization forced a deep questioning of personal beliefs: Was human dignity violated in Catholicism? If historical atrocities are simply dismissed as an “error,” why are Indigenous communities still treated differently today—struggling against ongoing ignorance and the violation of basic water rights?</p>
+
+        <p>If only they had been treated as true equals, culture would have been appreciated, assimilation prevented, and voices honored. Instead, reality often reveals a system where money acts as Canada’s idol.</p>
+
+        <p>To truly treat others as family means respecting their fundamental dignity and living in solidarity. Everyone holds a right and a responsibility to respect one another. Yet, residential schools violated this sacred trust—beating children unethically, torturing them in isolation, and driving many to tragedy.</p>
+
+        <p>This injustice must never go unrecognized. As Catholics and as global citizens today, our calling is clear: to stand up, acknowledge the truth, and actively protest for the enduring recognition and protection of Indigenous rights.</p>
+
+        <p class="reflection__note">This closing reflection is the author’s own journal — offered in a spirit of solidarity, not as a substitute for Indigenous voices or spiritual traditions.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <p class="footer__disclosure">All artwork on this page is an interpretive illustration created for this exhibit — not an archival photograph or an authenticated cultural artifact.</p>
+      <div class="footer__sources">
+        <p>Learn the history from those who hold it:</p>
+        <ul role="list">
+          <li><a href="https://nctr.ca/" target="_blank" rel="noopener">National Centre for Truth and Reconciliation</a></li>
+          <li><a href="https://nctr.ca/about/truth-and-reconciliation-commission-of-canada-calls-to-action/" target="_blank" rel="noopener">TRC Calls to Action</a></li>
+        </ul>
+      </div>
+      <p class="footer__crisis">24-hour Residential School Crisis Line: <a href="tel:18669254419">1-866-925-4419</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  const DEFAULT_LINE_HEIGHT = 16;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  const PICK_CAPABILITIES = ["pick"];
+  const PICK_CHAIN_LENGTH = 4;
+  const PICK_MAX_TEXT_CHARS = 120;
+  const PICK_MAX_HTML_CHARS = 300;
+
+  function truncate(value, maxChars) {
+    return value.length > maxChars ? value.slice(0, maxChars - 1) + "…" : value;
+  }
+
+  function isPickableElement(element) {
+    return (
+      element instanceof Element &&
+      element !== document.documentElement &&
+      element !== document.body
+    );
+  }
+
+  function resolvePickTarget(x, y) {
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return null;
+    const element = document.elementFromPoint(x, y);
+    return isPickableElement(element) ? element.closest("svg") || element : null;
+  }
+
+  function pickLabel(element) {
+    if (element.id) return element.localName + "#" + element.id;
+    return [element.localName].concat(Array.from(element.classList).slice(0, 2)).join(".");
+  }
+
+  // Only attributes that help find the element in source. data-* values and URL
+  // query strings or fragments can carry tokens.
+  const PICK_ATTRIBUTES = new Set([
+    "id",
+    "class",
+    "name",
+    "type",
+    "role",
+    "alt",
+    "aria-label",
+    "href",
+    "src",
+  ]);
+
+  function pickAttributeValue(attribute) {
+    return attribute.name === "href" || attribute.name === "src"
+      ? attribute.value.split(/[?#]/)[0]
+      : attribute.value;
+  }
+
+  function describePickElement(element) {
+    const chain = [];
+    for (
+      let current = element;
+      isPickableElement(current) && chain.length < PICK_CHAIN_LENGTH;
+      current = current.parentElement
+    ) {
+      chain.unshift(current);
+    }
+    const attributes = Array.from(element.attributes)
+      .filter((attribute) => PICK_ATTRIBUTES.has(attribute.name))
+      .map((attribute) => ` ${attribute.name}="${pickAttributeValue(attribute).replace(/"/g, "&quot;")}"`)
+      .join("");
+    const text = (element.innerText || element.textContent || "").replace(/\s+/g, " ").trim();
+    return {
+      chain: chain.map(pickLabel),
+      html: truncate(`<${element.localName}${attributes}>`, PICK_MAX_HTML_CHARS),
+      text: text ? truncate(text, PICK_MAX_TEXT_CHARS) : undefined,
+    };
+  }
+
+  // Hover asks once per frame, and innerText on a large section forces layout,
+  // so only the rect is re-read while the pointer stays on the same element.
+  // Clicks ask for fresh details since the page may have changed the element.
+  let lastPick = null;
+
+  function describePickTarget(element, fresh) {
+    if (fresh || lastPick?.element !== element) {
+      lastPick = { element, details: describePickElement(element) };
+    }
+    const rect = element.getBoundingClientRect();
+    return {
+      rect: { x: rect.left, y: rect.top, width: rect.width, height: rect.height },
+      ...lastPick.details,
+    };
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+      capabilities: PICK_CAPABILITIES,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_PICK") {
+      const element = resolvePickTarget(event.data.x, event.data.y);
+      postToTrustedTop({
+        type: "INLINE_EDIT_PICK_RESULT",
+        seq: event.data.seq,
+        target: element ? describePickTarget(element, event.data.fresh === true) : null,
+      });
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_BY") {
+      const { deltaX, deltaY, deltaMode } = event.data;
+      if (!scrollForwarding || !Number.isFinite(deltaX) || !Number.isFinite(deltaY)) return;
+      if (deltaMode !== 0 && deltaMode !== 1 && deltaMode !== 2) return;
+      const lineHeight =
+        parseFloat(getComputedStyle(document.documentElement).lineHeight) || DEFAULT_LINE_HEIGHT;
+      const scaleX = deltaMode === 1 ? lineHeight : deltaMode === 2 ? window.innerWidth : 1;
+      const scaleY = deltaMode === 1 ? lineHeight : deltaMode === 2 ? window.innerHeight : 1;
+      // The selection overlay receives the wheel event instead of this iframe.
+      // Instant scrolling preserves trackpad deltas even on smooth-scroll sites.
+      window.scrollBy({ left: deltaX * scaleX, top: deltaY * scaleY, behavior: "instant" });
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>
