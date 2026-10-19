@@ -10,7 +10,7 @@
   <meta property="og:image" content="assets/hero.webp">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c0b09'/%3E%3Cpath d='M16 6 L26 16 L16 26 L6 16 Z' fill='none' stroke='%23d9a441' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="preload" as="image" href="assets/hero.webp">
+  <link rel="preload" as="image" href="assets/hero-bg2.webp">
   <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,9 +28,15 @@
 
   <main id="top">
 
+    <div class="hero-pin">
+
     <!-- ============ SECTION 1 · HERO ============ -->
     <section class="hero" aria-label="Opening painting">
-      <img class="hero__image" src="assets/hero.webp" alt="Renaissance-style painting: a Canadian government official in a business suit slides stacks of cash forward, while an Indigenous man pulls his hand back, refusing to touch the money." width="1774" height="887" fetchpriority="high">
+      <div class="hero__scene" role="img" aria-label="Renaissance-style painting: a Canadian government official in a business suit slides stacks of cash forward, while an Indigenous man pulls his hand back, refusing to touch the money.">
+        <img class="hero__bg" src="assets/hero-bg2.webp" alt="" width="1774" height="887" fetchpriority="high">
+        <img class="hero__figure hero__figure--left" src="assets/figure-indigenous.webp" alt="" width="1024" height="1536">
+        <img class="hero__figure hero__figure--right" src="assets/figure-gov.webp" alt="" width="1024" height="1536">
+      </div>
       <div class="hero__scrim" aria-hidden="true"></div>
 
       <div class="hero__content">
@@ -51,11 +57,13 @@
       </div>
     </section>
 
+    </div>
+
     <!-- ============ SECTION 2 · THE GALLERY ============ -->
     <section class="gallery" id="exhibit">
       <div class="gallery__intro">
         <p class="kicker">The gallery</p>
-        <h2 class="gallery__heading">Four artifacts. Four truths.</h2>
+        <h2 class="gallery__heading">Nine artifacts. Nine truths.</h2>
         <p class="gallery__lede">Walk slowly. Each artifact carries a piece of this history — select it to uncover what it holds.</p>
       </div>
 
@@ -149,6 +157,117 @@
           </div>
         </article>
 
+        <!-- Station 5 -->
+        <article class="station" id="station-5" data-station>
+          <div class="station__visual">
+            <button class="artifact" type="button" aria-expanded="false" aria-controls="story-5" aria-label="Uncover the story of the chained door">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <img src="assets/artifact-door.webp" alt="A heavy shut wooden door wrapped in dark iron chains and a padlock, lit by a museum spotlight." width="1536" height="1024" loading="lazy">
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 05</p>
+            <h3 class="station__title">The Residential School System</h3>
+            <p class="station__medium">Wood, iron chains</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-5">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-5" role="region" aria-label="Station 5 story">
+              <p>“The Residential School System was a network of boarding schools funded by the Canadian government and run by churches from the 1830s until 1996. Its primary goal was to forcibly assimilate Indigenous children by stripping away their languages, cultures, and traditions.”</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Station 6 -->
+        <article class="station station--flip" id="station-6" data-station>
+          <div class="station__visual">
+            <button class="artifact" type="button" aria-expanded="false" aria-controls="story-6" aria-label="Uncover the story of the hair and white powder">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <img src="assets/artifact-hair.webp" alt="Cut pieces of braided hair beside a small pile of white powder on dark wood, in dim museum light." width="1536" height="1024" loading="lazy">
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 06</p>
+            <h3 class="station__title">Scale of Removal</h3>
+            <p class="station__medium">Hair, white powder</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-6">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-6" role="region" aria-label="Station 6 story">
+              <p>“More than 150,000 First Nations, Inuit, and Métis children were forcibly removed from their homes. The harm extended beyond the students to their families, communities, and future generations.”</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Station 7 -->
+        <article class="station" id="station-7" data-station>
+          <div class="station__visual">
+            <button class="artifact" type="button" aria-expanded="false" aria-controls="story-7" aria-label="Uncover the story of the law book and documents">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <img src="assets/artifact-act.webp" alt="A thick antique law book with scattered aged documents around it, lit from one side." width="1536" height="1024" loading="lazy">
+              <span class="artifact__plate" aria-hidden="true">The Indian Act</span>
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 07</p>
+            <h3 class="station__title">Who Ran the System</h3>
+            <p class="station__medium">The Indian Act, documents</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-7">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-7" role="region" aria-label="Station 7 story">
+              <p>“The Canadian government created the laws (such as the Indian Act) and funded the system. Christian churches managed the daily operations, with the Catholic Church running roughly 60% of the schools alongside the Anglican, Presbyterian, and United churches.”</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Station 8 -->
+        <article class="station station--flip" id="station-8" data-station>
+          <div class="station__visual">
+            <button class="artifact" type="button" aria-expanded="false" aria-controls="story-8" aria-label="Uncover the story of the belt">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <img src="assets/artifact-belt.webp" alt="A worn dark leather belt with a heavy metal buckle under a harsh spotlight." width="1536" height="1024" loading="lazy">
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 08</p>
+            <h3 class="station__title">Conditions Inside</h3>
+            <p class="station__medium">Leather, metal</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-8">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-8" role="region" aria-label="Station 8 story">
+              <p>“Children faced widespread abuse, extreme neglect, harsh discipline, and forced labor. Overcrowding and inadequate medical care caused frequent outbreaks of deadly diseases like tuberculosis.”</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Station 9 -->
+        <article class="station" id="station-9" data-station>
+          <div class="station__visual">
+            <button class="artifact" type="button" aria-expanded="false" aria-controls="story-9" aria-label="Uncover the story of the moccasin and sneaker">
+              <span class="artifact__spot" aria-hidden="true"></span>
+              <img src="assets/artifact-shoes.webp" alt="A single beaded leather moccasin beside a single modern white athletic sneaker with a curved side stripe, displayed as a split pair." width="1536" height="1024" loading="lazy">
+            </button>
+            <p class="artifact__plinth" aria-hidden="true"></p>
+          </div>
+          <div class="station__text">
+            <p class="station__index">Station 09</p>
+            <h3 class="station__title">Intergenerational Impact</h3>
+            <p class="station__medium">Beadwork, canvas</p>
+            <button class="reveal-btn" type="button" aria-expanded="false" aria-controls="story-9">
+              <span class="reveal-btn__label">Uncover the story</span>
+            </button>
+            <div class="story" id="story-9" role="region" aria-label="Station 9 story">
+              <p>“Forcing children away from their families broke generational bonds and prevented survivors from learning native languages and parenting skills. This created deep, ongoing intergenerational trauma and social challenges for Indigenous communities today.”</p>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -224,6 +343,12 @@
         </button>
 
         <p class="transition__hint" id="transitionHint">Follow the butterfly</p>
+
+        <div class="transition__journal" id="transitionJournal" aria-hidden="true">
+          <p class="transition__journal-kicker">From the journal</p>
+          <p class="transition__journal-title">Dignity, Solidarity, and Faith</p>
+          <p class="transition__journal-lead">“Over the course of this month, tremendous emotions were felt. Spikes of realization forced a deep questioning of personal beliefs: Was human dignity violated in Catholicism? If historical atrocities are simply dismissed as an ‘error,’ why are Indigenous communities still treated differently today—struggling against ongoing ignorance and the violation of basic water rights?”</p>
+        </div>
       </div>
     </section>
 
