@@ -193,16 +193,6 @@ a:hover { color: var(--amber-bright); }
   padding: var(--space-3) var(--space-4);
   background: rgba(12, 11, 9, 0.78);
 }
-.hero__caption {
-  position: absolute; z-index: 2;
-  right: var(--space-8); bottom: var(--space-16);
-  max-width: 38ch;
-  font-size: var(--text-xs);
-  line-height: 1.55;
-  color: var(--ivory-faint);
-  text-align: right;
-}
-.caption-label { color: var(--ivory-muted); font-weight: 500; }
 .hero__scrollcue {
   position: absolute; z-index: 2;
   left: 50%; transform: translateX(-50%);
@@ -620,11 +610,6 @@ a:hover { color: var(--amber-bright); }
     padding: calc(var(--space-8) + 3.5rem) var(--space-5) var(--space-5);
   }
   .hero__title { max-width: 12ch; }
-  .hero__caption {
-    position: static;
-    padding: 0 var(--space-5);
-    text-align: left;
-  }
   .hero__scrollcue {
     position: static;
     transform: none;
